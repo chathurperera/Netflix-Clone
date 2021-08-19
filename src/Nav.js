@@ -1,9 +1,10 @@
-import React, { useState , useEffect } from 'react'
+import React, { useState , useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import "./Nav.css";
 import logo from './Images/netflixlogo.png';
 import avatar from './Images/Netflix-avatar.png';
 
-const Nav = () => {
+function Nav(){
     const [show,handleShow] = useState(false);
     
     const transitionNavBar = () => {
@@ -22,8 +23,8 @@ const Nav = () => {
     return (
         <nav className={`nav  ${show && "nav__black"}`}>
             <div className="nav__content">
-                <img src={logo} className='nav__logo' alt="" />
-                <img src={avatar} className='nav__avatar' alt="" />
+                <Link to="/" ><img src={logo} className='nav__logo' alt="" /></Link> 
+                <Link to="/profile"><img src={avatar} className='nav__avatar' alt="" /></Link> 
             </div>
         </nav>
     )

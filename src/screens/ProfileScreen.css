@@ -40,7 +40,8 @@
 }
 
 .profileScreen__signout {
-  padding: 30px 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
   font-size: 1rem;
   margin-top: 5%;
   width: 100%;
